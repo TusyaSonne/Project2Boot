@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div th:if="${books.isEmpty()}">
+    <div th:if="${books == null || books.isEmpty()}">
         <p>Книг не найдено.</p>
     </div>
 </head>
